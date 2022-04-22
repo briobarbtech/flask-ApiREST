@@ -1,7 +1,7 @@
 POST http://127.0.0.1:5000/tasks HTTP/1.1
-content-Type: application/json
+Content-Type: application/json
 
 {
-    "title": "Primera tarea",
+    "title": "Segunda a tarea",
     "description": "Esta es la primera tarea, si se subió muchas felicidades"
 }
