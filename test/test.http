@@ -1,7 +1,32 @@
+### TRAER TODAS LAS TAREAS ###
+
+GET http://localhost:5000/tasks HTTP/1.1
+
+### TRAER UNA SOLA TAREA ESPECIFICADA POR EL ID ###
+
+GET http://localhost:5000/tasks/2 HTTP/1.1
+
+### CREAR UNA NUEVA TAREA ###
+
 POST http://127.0.0.1:5000/tasks HTTP/1.1
 Content-Type: application/json
 
 {
-    "title": "Segunda a tarea",
-    "description": "Esta es la primera tarea, si se subió muchas felicidades"
+    "title": "Quinta tarea",
+    "description": "Esta es la cuarta tarea, si se subió muchas felicidades"
 }
+
+### ACTUALIZAR UNA TAREA ESPECÍFICA ###
+
+PUT  http://localhost:5000/tasks/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Actualizar una tarea",
+    "description": "Esta es la tarea actualizada, si se actualizó muchas felicidades"
+}
+
+### ELIMINAR UNA TAREA ESPECÍFICA ####
+
+### 
+DELETE http://localhost:5000/tasks/2 HTTP/1.1
